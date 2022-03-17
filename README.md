@@ -304,10 +304,6 @@ const signupOptions = {
 yarn rw setup deploy netlify
 ```
 
-```bash
-yarn rw g secret
-```
-
 ### Set up Render Deployment
 
 ```bash
