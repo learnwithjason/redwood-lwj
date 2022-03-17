@@ -15,6 +15,10 @@ export const handler = createGraphQLHandler({
   directives,
   sdls,
   services,
+  cors: {
+    origin: 'https://redwood-lwj-web.onrender.com',
+    credentials: 'include',
+  },
   onException: () => {
     // Disconnect from your database with an unhandled exception.
     db.$disconnect()
