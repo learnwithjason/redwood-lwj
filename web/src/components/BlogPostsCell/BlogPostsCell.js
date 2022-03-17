@@ -21,7 +21,12 @@ export const Success = ({ posts }) => {
   return (
     <ul>
       {posts.map((item) => {
-        return <li key={item.id}>{JSON.stringify(item)}</li>
+        return (
+          <li key={item.id}>
+            <a href={`/post/${item.id}`}>View Post</a>
+            <pre>{JSON.stringify(item)}</pre>
+          </li>
+        )
       })}
     </ul>
   )
